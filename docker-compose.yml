@@ -1,0 +1,16 @@
+version: '3.9'
+services:
+  main-server:
+    build:
+      context: ./main-server
+    ports:
+      - '3000:3000'
+    env_file: .env
+  main-server-nginx:
+    restart: always
+    build:
+      context: ./main-server-nginx
+    ports:
+      - '80:80'
+    depends_on:
+      - main-server

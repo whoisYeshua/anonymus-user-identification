@@ -1,0 +1,23 @@
+{
+  "name": "main-server",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "start": "NODE_ENV=DEV tsx watch src/index.ts",
+    "prod": "NODE_ENV=PROD tsx src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "whoisYeshua",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^4.17.0",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.1.4",
+    "dotenv": "^16.0.3",
+    "tsx": "^3.12.7",
+    "typescript": "^5.0.4"
+  }
+}
